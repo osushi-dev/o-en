@@ -19,10 +19,12 @@ $this->Html->css('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.
 $this->Html->css('//fonts.googleapis.com/css?family=Gochi+Hand', null, array('inline' => false));
 $this->Html->css('bootstrap.min', null, array('inline' => false));
 $this->Html->css('base',          null, array('inline' => false));
+$this->Html->css('star-rating.min', null, array('inline' => false));
 
 /*  === add js ===  */
 $this->Html->script('jquery.simple-sidebar.min.js', array('inline' => false));
 $this->Html->script('base.js', array('inline' => false));
+$this->Html->script('star-rating.min.js', array('inline' => false));
 
 ?>
 
