@@ -19,13 +19,13 @@
 
         <h4>お探しの物を全て揃いましたか？</h4>
         <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="はい"> はい
+            <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="はい"> はい
         </label>
         <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="いいえ"> いいえ
+            <input type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="いいえ"> いいえ
         </label>
         <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="その他"> その他
+            <input type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="その他"> その他
         </label>
 
         <h4>お買い物はいかがでしたか？</h4>
@@ -33,8 +33,8 @@
 
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">また今度</button>
+        <button type="button" class="btn btn-primary">回答</button>
     </div>
 </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
