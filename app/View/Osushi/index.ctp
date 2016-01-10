@@ -11,12 +11,12 @@ $this->Html->script('pages/landing', array('inline' => false));
     <div class="landing-header-inner center">
         <div class="container">
             <div class="row">
-                <h1 class="brand" id="top-title">OSUSHI</h1>
-                <p>投資を身近に。OSUSHIで手軽に。</p>
+                <h1 class="brand" id="top-title">O-EN</h1>
+                <p>企業を身近に。O-ENでお得に。</p>
             </div>
             <div class="row">
                 <a class="btn btn-transparent btn-raised" href="dashboard/">
-                    OSUSHIにログインする
+                    O-ENにログインする
                 </a>
             </div>
         </div>
@@ -27,16 +27,16 @@ $this->Html->script('pages/landing', array('inline' => false));
     <div class="container">
         <div class="m-30 row center">
             <div class="col-sm-4">
-                <i class="m-30 fa fa-dollar fa-4x"></i>
-                <p>資金の準備無しに株式投資を始めることができます。</p>
+                <i class="m-30 fa fa-camera-retro fa-4x"></i>
+                <p>レシートを画像で撮って送るだけの簡単操作</p>
             </div>
             <div class="col-sm-4">
                 <i class="m-30 fa fa-shopping-cart fa-4x"></i>
-                <p>日々の買い物で株式投資ができるため、時間が必要ありません。</p>
+                <p>日々の買い物がよりお得に</p>
             </div>
             <div class="col-sm-4">
-                <i class="m-30 fa fa-desktop fa-4x"></i>
-                <p>直感的なUI、シンプルな情報を提供しているため、難しい理解が必要ありません。</p>
+                <i class="m-30 fa fa-gift fa-4x"></i>
+                <p>あなたが応援した企業からお返しがもらえるかも</p>
             </div>
         </div>
     </div>

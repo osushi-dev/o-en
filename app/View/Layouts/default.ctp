@@ -54,7 +54,7 @@ $this->Html->script('base.js', array('inline' => false));
                     <a href="#" id="toggle-sidebar" class=""><i class="fa fa-bars sidebar-button" aria-hidden="true"></i></a>
                 <?php } ?>
                 <div class="center">
-                    <a class="navbar-brand brand" href="/dashboard">OSUSHI</a>
+                    <a class="navbar-brand brand" href="/dashboard">O-EN</a>
                 </div>
             </div>
         </header>
@@ -68,7 +68,7 @@ $this->Html->script('base.js', array('inline' => false));
             <div style="text-align:center">
                 <p class="muted credit">&copy; 2015
                     <?php if(date("Y")!=2015) echo date("-Y"); ?>
-                        All rights reserved, Acht Geld＠NRI Hackathon 2015.10
+                        All rights reserved, Acht Geld
                 </p>
             </div>
             <?php echo $this->element('sql_dump'); ?>
