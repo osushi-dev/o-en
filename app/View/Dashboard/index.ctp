@@ -22,9 +22,7 @@ $this->Html->script('pages/dashboard', array('inline' => false));
 
     <div class="row" style="background-image: url('../img/user-back.jpg'); background-size:auto; background-position:center;">
         <div align="center">
-            <br>
-            <img src="../img/user-sazae.jpg" class="img-thumbnail" alt="User-thumbnail" style="width:30%; border-radius:50%;">
-            <br>
+            <img src="../img/user-sazae.jpg" class="img-thumbnail" alt="User-thumbnail" style="width:130px; -webkit-clip-path:circle(60px at center); margin-bottom:-25px">
             <h4 style="color:#eee;">サザエ さん</h4>
             <h4 style="color:#eee;">1,000,000 pt</h4>
         </div>
@@ -48,9 +46,6 @@ $this->Html->script('pages/dashboard', array('inline' => false));
                 </tr>
             </tbody>
         </table>
-        <a href="#">
-            <button class="btn btn-default btn-raised" style="width:100%">もっと見る</button>
-        </a>
     </div>
 
     <div class="row pb-20">
