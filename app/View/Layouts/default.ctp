@@ -34,7 +34,7 @@ $this->Html->script('base.js', array('inline' => false));
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <?php echo $this->Html->charset(); ?>
-        <title>OSUSHI | <?php echo $page_title ?></title>
+        <title>O-EN | <?php echo $page_title ?></title>
         <?php
             echo $this->Html->meta('icon');
             echo $this->fetch('meta');
