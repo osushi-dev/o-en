@@ -78,28 +78,31 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
         <?php if(strcmp(Router::url(), "/") !== 0){?>
         <div id="sidebar">
             <div class="container-fluid" style="background-image: url('../img/user-back.jpg'); background-size:auto; background-position:center;">
-                <br>
-                <img src="../img/user-sazae.jpg" class="img-thumbnail" alt="User-thumbnail" style="width:80px">
-                <br>
+                <img src="../img/user-sazae.jpg" class="img-thumbnail" alt="User-thumbnail" style="width:130px; -webkit-clip-path:circle(60px at center); margin-bottom:-25px">
                 <h4 style="color:#eee;">サザエ さん</h4>
-                <h5 style="color:#eee;">sazae@gmail.com</h5>
+                <h4 style="color:#eee;">1,000,000 pt</h4>
             </div>
             <div class="list-group">
                 <a href="/dashboard" class="list-group-item close-sidebar active">
-                    <h4 class="list-group-item-heading"><i class="fa fa-tachometer"></i> トップ画面</h4>
+                    <h4 class="list-group-item-heading"><i class="fa fa-tachometer"></i> マイページ</h4>
+                </a>
+                <a href="/point/payment" class="list-group-item close-sidebar">
+                    <h4 class="list-group-item-heading"><i class="fa fa-camera-retro"></i> レシート送信</h4>
                 </a>
                 <a href="/asset" class="list-group-item close-sidebar">
-                    <h4 class="list-group-item-heading"><i class="fa fa-bar-chart"></i> 保有銘柄一覧</h4>
-                </a>
-                <a href="/purchaseinfo" class="list-group-item close-sidebar">
-                    <h4 class="list-group-item-heading"><i class="fa fa-history"></i> 購入履歴</h4>
+                    <h4 class="list-group-item-heading"><i class="fa fa-wrench"></i> おうえんメーカー</h4>
                 </a>
                 <a href="/market" class="list-group-item close-sidebar">
-                    <h4 class="list-group-item-heading"><i class="fa fa-cart-plus"></i> 端株取引</h4>
+                    <h4 class="list-group-item-heading"><i class="fa fa-gift"></i> もらいもの</h4>
                 </a>
-                 <a href="/point/payment" class="list-group-item close-sidebar">
+                <a href="/purchaseinfo" class="list-group-item close-sidebar">
+                    <h4 class="list-group-item-heading"><i class="fa fa-history"></i> 買い物履歴</h4>
+                </a>
+                <!--
+                <a href="/point/payment" class="list-group-item close-sidebar">
                     <h4 class="list-group-item-heading"><i class="fa fa-jpy"></i> OSUSHIポイント購入</h4>
                 </a>
+                -->
             </div>
         </div>
         <?php } ?>
