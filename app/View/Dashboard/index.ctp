@@ -18,6 +18,73 @@ $this->Html->script('pages/dashboard', array('inline' => false));
     });
 </script>
 
+<style>
+    .list-group-item-logolist{
+        height:80px;
+        position:relative;
+    }
+    .logolist-item-logo-img{
+        position:absolute;
+        top:10px;
+        left:8px;
+        width:60px;
+        height:60px;
+        border: 0px;
+        border-radius: 10px;
+    }
+    .logolist-item-logo-name{
+        position:absolute;
+        top:0px;
+        left:80px;
+    }
+    .logolist-item-logo-level{
+        position:absolute;
+        top:40px;
+        left:80px;
+    }
+    .logolist-item-logo-rank{
+        position:absolute;
+        top:5px;
+        left:275px;
+        font-size: 30px;
+    }
+    .logolist-item-logo-rank-number{
+        font-size: 50px;
+    }
+    .logolist-item-logo-arrow{
+        position:absolute;
+        top:18px;
+        left:230px;
+    }
+    .fa-arrow-up{
+        color:GREEN;
+    }
+    .fa-arrow-down{
+        color:RED;
+    }
+    .logo-level-level1{
+        color:#FFCDD6;
+    }
+    .logo-level-level2{
+        color:#F990A2;
+    }
+    .logo-level-level3{
+        color:#FB5874;
+    }
+    .logo-level-level4{
+        color:#FD143D;
+    }
+    .logo-level-empty{
+        color:lightgray;
+    }
+    .headline a{
+        font-size: 12px;
+        float:right;
+        padding-top: 10px;
+    }
+</style>
+
+
 <div class="mt-20 container-fluid main-component">
 
     <div class="row" style="background-image: url('../img/user-back.jpg'); background-size:auto; background-position:center;">
@@ -29,27 +96,61 @@ $this->Html->script('pages/dashboard', array('inline' => false));
     </div>
 
     <div class="row">
-        <h4 class="headline">おうえんメーカー</h4>
-        <table class="table">
-            <tbody>
-                <tr>
-                    <td>金</td>
-                    <td>あああ</td>
-                </tr>
-                <tr>
-                    <td>銀</td>
-                    <td>あああ</td>
-                </tr>
-                <tr>
-                    <td>銅</td>
-                    <td>あああ</td>
-                </tr>
-            </tbody>
-        </table>
+        <h4 class="headline">おうえんメーカー<a href="/listoenmaker">もっと見る...</a></h4>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-logolist">
+            <img src="http://lineofficial.blogimg.jp/ja/imgs/c/a/caedbf69.jpg" class="logolist-item-logo-img" />
+            <h4 class="logolist-item-logo-name">コカ・コーラ</h4>
+            <div class="logolist-item-logo-level">
+                <i class="fa fa-heart fa-2x logo-level-level1"></i>
+                <i class="fa fa-heart fa-2x logo-level-level2"></i>
+                <i class="fa fa-heart fa-2x logo-level-level3"></i>
+                <i class="fa fa-heart fa-2x logo-level-level4"></i>
+            </div>
+            <div class="logolist-item-logo-arrow">
+                    <i class="fa fa-arrow-up fa-3x" ></i>
+            </div>
+            <div class="logolist-item-logo-rank">
+                <span class="logolist-item-logo-rank-number">31</span>位
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-logolist">
+            <img src="http://www.cnyes.com/globalinvest/images/pics/B_200x150/JP-4911.jpg" class="logolist-item-logo-img" />
+            <h4 class="logolist-item-logo-name">資生堂</h4>
+            <div class="logolist-item-logo-level">
+                <i class="fa fa-heart fa-2x logo-level-level1"></i>
+                <i class="fa fa-heart fa-2x logo-level-level2"></i>
+                <i class="fa fa-heart fa-2x logo-level-level3"></i>
+                <i class="fa fa-heart fa-2x logo-level-empty"></i>
+            </div>
+            <div class="logolist-item-logo-arrow">
+                    <i class="fa fa-arrow-up fa-3x" ></i>
+            </div>
+            <div class="logolist-item-logo-rank">
+                <span class="logolist-item-logo-rank-number">25</span>位
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-logolist">
+            <img src="http://www.suntory.co.jp/img/socialthumb.gif" class="logolist-item-logo-img" />
+            <h4 class="logolist-item-logo-name">サントリー</h4>
+            <div class="logolist-item-logo-level">
+                <i class="fa fa-heart fa-2x logo-level-level1"></i>
+                <i class="fa fa-heart fa-2x logo-level-level2"></i>
+                <i class="fa fa-heart fa-2x logo-level-empty"></i>
+                <i class="fa fa-heart fa-2x logo-level-empty"></i>
+            </div>
+            <div class="logolist-item-logo-arrow">
+                    <i class="fa fa-arrow-down fa-3x" ></i>
+            </div>
+            <div class="logolist-item-logo-rank">
+                <span class="logolist-item-logo-rank-number">63</span>位
+            </div>
+          </a>
+      </div>
     </div>
 
     <div class="row pb-20">
-        <h4 class="headline">もらいもの</h4>
+        <h4 class="headline">もらいもの<a href="/listgift">もっと見る...</a></h4>
         <div class="mb-10 carousel">
             <div class="recommend-item" style="background-image:url('http://livedoor.blogimg.jp/ftmember/imgs/7/b/7bf3fde8.jpg')">
                 <div class="overlay"></div>
