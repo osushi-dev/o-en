@@ -33,7 +33,7 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- Allow web app to be run in full-screen mode. -->
     <meta name="apple-mobile-web-app-capable" content="yes">
 
@@ -41,7 +41,7 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
     <meta name="apple-mobile-web-app-title" content="O-EN">
 
     <!-- Configure the status bar. -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
     <!-- Disable automatic phone number detection. -->
     <meta name="format-detection" content="telephone=no">
