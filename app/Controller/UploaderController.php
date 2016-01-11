@@ -23,7 +23,14 @@ class UploaderController extends AppController {
 
 
     public function survey(){
-        $this->set('page_title','レシートを送った');
+    	if (is_uploaded_file($_FILES["picture"]["tmp_name"])) {
+	   ; 
+   	}else{
+	    //アップロードファイルが未選択
+      	    $this->Session->setFlash('画像が選択されていません。', 'default', array('class' => 'alert alert-success'));
+      	    $this->redirect('/uploader');
+	}
+	$this->set('page_title','レシートを送った');
     }
 
 
