@@ -121,7 +121,7 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
                     <a href="/listgift"><i class="fa fa-gift"></i><br>もらいもの</a>
                 </li>
                 <li>
-                    <a href="/purchaseinfo"><i class="fa fa-history"></i><br>利用履歴</a>
+                    <a href="/uploadhistory"><i class="fa fa-history"></i><br>利用履歴</a>
                 </li>
             </ul>
         </footer>
