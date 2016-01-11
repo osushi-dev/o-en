@@ -32,7 +32,7 @@
                     <input type="file" accept="image/*;capture=camera" id="imageFile" name="picture" />
             	</div>
 	    <br>
-            <input type="submit" value="登録">
+            <input type="submit" value="登録" class="btn btn-primary btn-lg">
 	    </form>
 
 	</div>
