@@ -114,6 +114,9 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
         <div>
             <?php echo $this->Flash->render(); ?>
             <?php echo $this->fetch('content'); ?>
+            <?php if(strcmp(Router::url(), "/") !== 0){?>
+                <div style="bottom:0px; height:60px"></div>
+            <?php }?>
         </div>
 
         <?php if(strcmp(Router::url(), "/") !== 0){?>
@@ -146,7 +149,6 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
             </div>
         </footer>
         <?php } ?>
-
         <?php echo $this->fetch('script');?>
     </body>
 </html>
