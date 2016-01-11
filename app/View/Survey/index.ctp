@@ -1,5 +1,3 @@
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -34,35 +32,17 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
 
-<div class="mt-20 container-fluid main-component">
-    <div class="row">
-        <h4 class="headline">レシート送信が完了しました</h4>
-        <h4 id="hide_modal" class="headline hidden">アンケートへのご協力ありがとうございました</h4>
-    </div>
-</div>
+
 
 
 <script>
     jQuery(document).ready(function () {
-    	$('#myModal').modal('show');
         $("#input-id").rating({min:0, max:5, step:1, size:'sm', showClear:false, showCaption:false});
-
-
-        var a = document.getElementsByTagName("a");
-        for(var i=0;i<a.length;i++) {
-            if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
-                a[i].onclick=function() {
-                    window.location=this.getAttribute("href");
-                    return false; 
-                }
-            }
-        }            
     });
-
-    $('#myModal').on('click', '.modal-footer .btn-primary', function() {
- 	$('#myModal').modal('hide');
-    	$('#hide_modal').removeClass('hidden');
-    });
-
 </script>
+
+
