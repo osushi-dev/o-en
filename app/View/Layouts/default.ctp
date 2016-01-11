@@ -73,11 +73,11 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
             border-right: 0;
         }
         .table-ul li a {
-            color: #fff;
             display: block;
             font-size: 8px;
             text-decoration: none;
             padding: 10px 0;
+            color: #fff;
         }
         .table-ul li a i{
             font-size: 20px;
@@ -108,11 +108,21 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
         <?php if(strcmp(Router::url(), "/") !== 0){?>
         <footer id="bottom-tabbar">
             <ul class="table-ul">
-              <li><a href="#"><i class="fa fa-tachometer"></i><br>マイページ</a></li>
-              <li><a href="#"><i class="fa fa-camera-retro"></i><br>レシート送信</a></li>
-              <li><a href="#"><i class="fa fa-wrench"></i><br>応援メーカー</a></li>
-              <li><a href="#"><i class="fa fa-gift"></i><br>もらいもの</a></li>
-              <li><a href="#"><i class="fa fa-history"></i><br>利用履歴</a></li>
+                <li>
+                    <a href="/dashboard"><i class="fa fa-tachometer"></i><br>マイページ</a>
+                </li>
+                <li>
+                    <a href="/uploader"><i class="fa fa-camera-retro"></i><br>レシート送信</a>
+                </li>
+                <li>
+                    <a href="/listoenmaker"><i class="fa fa-wrench"></i><br>応援メーカー</a>
+                </li>
+                <li>
+                    <a href="/listgift"><i class="fa fa-gift"></i><br>もらいもの</a>
+                </li>
+                <li>
+                    <a href="/purchaseinfo"><i class="fa fa-history"></i><br>利用履歴</a>
+                </li>
             </ul>
         </footer>
         <?php }else{ ?>
