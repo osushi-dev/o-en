@@ -35,12 +35,10 @@
 </div><!-- /.modal -->
 
 
-<div class="container">
-    <div class="jumbotron">
-        <div class="container">
-            <h2>レシートが送信されました。</h2>
-	    <h2 id="hide_modal" class="hidden">アンケートへのご協力ありがとうございました。</h2>
-	</div>
+<div class="mt-20 container-fluid main-component">
+    <div class="row">
+        <h4 class="headline">レシート送信が完了しました</h4>
+        <h4 id="hide_modal" class="headline hidden">アンケートへのご協力ありがとうございました</h4>
     </div>
 </div>
 
@@ -57,5 +55,3 @@
     });
 
 </script>
-
-
