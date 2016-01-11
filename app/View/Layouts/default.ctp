@@ -97,20 +97,6 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
     </head>
 
     <body>
-        <header class="navbar navbar-fixed-top">
-            <div class="container">
-                <!-- <a href="#" id="toggle&#45;sidebar" class="sidebar&#45;buttonn"><span class="glyphicon glyphicon&#45;th&#45;list" aria&#45;hidden="true"></span></a> -->
-                <!--
-                <?php if(strcmp(Router::url(), "/") !== 0){?>
-                    <a href="#" id="toggle-sidebar" class=""><i class="fa fa-bars sidebar-button" aria-hidden="true"></i></a>
-                <?php } ?>
-                -->
-                <div class="center">
-                    <a class="navbar-brand brand" href="/dashboard">O-EN</a>
-                </div>
-            </div>
-        </header>
-
         <div>
             <?php echo $this->Flash->render(); ?>
             <?php echo $this->fetch('content'); ?>
