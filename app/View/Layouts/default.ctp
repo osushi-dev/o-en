@@ -30,14 +30,25 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
 
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Allow web app to be run in full-screen mode. -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
 
-        <?php echo $this->Html->charset(); ?>
-        <title>O-EN | <?php echo $page_title ?></title>
-        <?php
+    <!-- Make the app title different than the page title. -->
+    <meta name="apple-mobile-web-app-title" content="O-EN">
+
+    <!-- Configure the status bar. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Disable automatic phone number detection. -->
+    <meta name="format-detection" content="telephone=no">
+
+    <?php echo $this->Html->charset(); ?>
+    <title>O-EN | <?php echo $page_title ?></title>
+    <?php
             echo $this->Html->meta('icon');
             echo $this->fetch('meta');
             echo $this->fetch('css');
