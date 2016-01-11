@@ -1,6 +1,5 @@
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script>
-<<<<<<< HEAD
     window.onload = function() {
     	document.getElementById("sbmImage").disabled = true;
     };
@@ -23,7 +22,6 @@
 	    document.getElementById("sbmImage").disabled = false;
         }, true);
     }, true);
-
    
 </script>
 
