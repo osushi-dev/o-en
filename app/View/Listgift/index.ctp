@@ -1,4 +1,5 @@
 <div class="container show-grid">
+	<h4 class="headline">おすすめギフト</h4>
 	<div class="row">
 		<div class="col-xs-6">
 			<a href="#" class="list-group-item">
@@ -24,9 +25,34 @@
 			<p class="absolute">アルフォート</p>
 			</a>
 		</div>
+		<div class="col-xs-6">
+			<a href="#" class="list-group-item">
+			<img src="http://cdn.liptonchilled.com/images/product/500/milktea2015/package.png" class="img-thumbnail list_company_logo" />
+			<p class="absolute">リプトン ミルクティー</p>
+			</a>
+		</div>
+		<div class="col-xs-6">
+			<a href="#" class="list-group-item">
+			<img src="http://www.meg-snow.com/products/img_detail/537500l.jpg" class="img-thumbnail list_company_logo" />
+			<p class="absolute">メグミルク</p>
+			</a>
+		</div>
+		<div class="col-xs-6">
+			<a href="#" class="list-group-item">
+			<img src="http://ecx.images-amazon.com/images/I/81OtdA6KL3L._SL1500_.jpg" class="img-thumbnail list_company_logo" />
+			<p class="absolute">アタック</p>
+			</a>
+		</div>
+		<div class="col-xs-6">
+			<a href="#" class="list-group-item">
+			<img src="https://www.eatsmart.jp/image/food/00/01/17/379298.jpg" class="img-thumbnail list_company_logo" />
+			<p class="absolute">キットカット</p>
+			</a>
+		</div>
 	</div>
 </div>
 
+<h4 class="headline">もらいもの一覧</h4>
 <ul class="table-ul table-mid-menu">
 		<li>
 				<a href="">今日</a>
@@ -42,12 +68,21 @@
 		</li>
 </ul>
 
-<div class="list-group">
+<div class="list-group list-get-gift">
 	<a href="#" class="list-group-item">
 		<h4 class="">01/11 アサヒスーパードライ(125ml)</h4>
 	</a>
 	<a href="#" class="list-group-item">
 		<h4 class="">01/12 綾鷹500ml</h4>
+	</a>
+	<a href="#" class="list-group-item">
+		<h4 class="">01/13 チョコパイ</h4>
+	</a>
+	<a href="#" class="list-group-item">
+		<h4 class="">01/14 キシリトールガム</h4>
+	</a>
+	<a href="#" class="list-group-item">
+		<h4 class="">01/15 トイレットペーパー</h4>
 	</a>
 </div>
 
@@ -71,6 +106,10 @@
 		div.col-xs-6{
 			padding: 0 0 0 0;
 		}
+		.row{
+			overflow:scroll;
+			height:205px;
+		}
 		.table-mid-menu {
 			font-size:14px !important;
 			background-color: #ffb6c1;
@@ -78,6 +117,10 @@
 		}
 		.table-mid-menu li a {
 			font-size:16px;
+		}
+		.list-get-gift{
+			overflow: scroll;
+			height:176px;
 		}
 		.active {
 			background-color: #ff69b4;
