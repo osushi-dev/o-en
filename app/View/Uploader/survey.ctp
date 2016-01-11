@@ -38,11 +38,11 @@
 <div class="container">
     <div class="jumbotron">
         <div class="container">
-            <h2>レシートが送信されました</h2>
+            <h2>レシートが送信されました。</h2>
+	    <h2 id="hide_modal" class="hidden">アンケートへのご協力ありがとうございました。</h2>
 	</div>
     </div>
 </div>
-
 
 
 <script>
@@ -50,6 +50,12 @@
     	$('#myModal').modal('show');
         $("#input-id").rating({min:0, max:5, step:1, size:'sm', showClear:false, showCaption:false});
     });
+
+    $('#myModal').on('click', '.modal-footer .btn-primary', function() {
+ 	$('#myModal').modal('hide');
+    	$('#hide_modal').removeClass('hidden');
+    });
+
 </script>
 
 
