@@ -47,6 +47,17 @@
     jQuery(document).ready(function () {
     	$('#myModal').modal('show');
         $("#input-id").rating({min:0, max:5, step:1, size:'sm', showClear:false, showCaption:false});
+
+
+        var a = document.getElementsByTagName("a");
+        for(var i=0;i<a.length;i++) {
+            if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
+                a[i].onclick=function() {
+                    window.location=this.getAttribute("href");
+                    return false; 
+                }
+            }
+        }            
     });
 
     $('#myModal').on('click', '.modal-footer .btn-primary', function() {
