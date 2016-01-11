@@ -46,15 +46,54 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+        <style>
+        #bottom-tabbar{
+            border-top: solid 3px rgba(231, 76, 60, 1.0);
+            padding-top: 0px;
+            position: fixed;
+            bottom: 0px;
+            z-index: 9999;
+        }
+        .table-ul {
+            background-color: gray;
+            display: table;
+            table-layout: fixed;
+            text-align: center;
+            width: 100%;
+            padding-left: 0px;
+            margin-bottom: 0px;
+        }
+        .table-ul li {
+            border-right: 1px solid #fff;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .table-ul li:last-child {
+            border-right: 0;
+        }
+        .table-ul li a {
+            color: #fff;
+            display: block;
+            font-size: 8px;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+        .table-ul li a i{
+            font-size: 20px;
+        }
+        </style>
     </head>
 
     <body>
         <header class="navbar navbar-fixed-top">
             <div class="container">
                 <!-- <a href="#" id="toggle&#45;sidebar" class="sidebar&#45;buttonn"><span class="glyphicon glyphicon&#45;th&#45;list" aria&#45;hidden="true"></span></a> -->
+                <!--
                 <?php if(strcmp(Router::url(), "/") !== 0){?>
                     <a href="#" id="toggle-sidebar" class=""><i class="fa fa-bars sidebar-button" aria-hidden="true"></i></a>
                 <?php } ?>
+                -->
                 <div class="center">
                     <a class="navbar-brand brand" href="/dashboard">O-EN</a>
                 </div>
@@ -66,6 +105,17 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
             <?php echo $this->fetch('content'); ?>
         </div>
 
+        <?php if(strcmp(Router::url(), "/") !== 0){?>
+        <footer id="bottom-tabbar">
+            <ul class="table-ul">
+              <li><a href="#"><i class="fa fa-tachometer"></i><br>マイページ</a></li>
+              <li><a href="#"><i class="fa fa-camera-retro"></i><br>レシート送信</a></li>
+              <li><a href="#"><i class="fa fa-wrench"></i><br>応援メーカー</a></li>
+              <li><a href="#"><i class="fa fa-gift"></i><br>もらいもの</a></li>
+              <li><a href="#"><i class="fa fa-history"></i><br>利用履歴</a></li>
+            </ul>
+        </footer>
+        <?php }else{ ?>
         <footer>
             <div style="text-align:center">
                 <p class="muted credit">&copy; 2015
@@ -73,39 +123,9 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
                         All rights reserved, Acht Geld
                 </p>
             </div>
-            <?php echo $this->element('sql_dump'); ?>
         </footer>
-        <?php if(strcmp(Router::url(), "/") !== 0){?>
-        <div id="sidebar">
-            <div class="container-fluid" style="background-image: url('../img/user-back.jpg'); background-size:auto; background-position:center;">
-                <img src="../img/user-sazae.jpg" class="img-thumbnail" alt="User-thumbnail" style="width:130px; -webkit-clip-path:circle(60px at center); margin-bottom:-25px">
-                <h4 style="color:#eee;">サザエ さん</h4>
-                <h4 style="color:#eee;">1,000,000 pt</h4>
-            </div>
-            <div class="list-group">
-                <a href="/dashboard" class="list-group-item close-sidebar active">
-                    <h4 class="list-group-item-heading"><i class="fa fa-tachometer"></i> マイページ</h4>
-                </a>
-                <a href="/point/payment" class="list-group-item close-sidebar">
-                    <h4 class="list-group-item-heading"><i class="fa fa-camera-retro"></i> レシート送信</h4>
-                </a>
-                <a href="/asset" class="list-group-item close-sidebar">
-                    <h4 class="list-group-item-heading"><i class="fa fa-wrench"></i> おうえんメーカー</h4>
-                </a>
-                <a href="/market" class="list-group-item close-sidebar">
-                    <h4 class="list-group-item-heading"><i class="fa fa-gift"></i> もらいもの</h4>
-                </a>
-                <a href="/purchaseinfo" class="list-group-item close-sidebar">
-                    <h4 class="list-group-item-heading"><i class="fa fa-history"></i> 買い物履歴</h4>
-                </a>
-                <!--
-                <a href="/point/payment" class="list-group-item close-sidebar">
-                    <h4 class="list-group-item-heading"><i class="fa fa-jpy"></i> OSUSHIポイント購入</h4>
-                </a>
-                -->
-            </div>
-        </div>
         <?php } ?>
+
         <?php echo $this->fetch('script');?>
     </body>
 </html>
