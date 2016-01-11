@@ -226,3 +226,17 @@ You can also add some CSS styles for your pages at: %s.',
 	<li><a href="http://cakefoundation.org"><?php echo __d('cake_dev', 'Cake Software Foundation'); ?> </a>
 	<ul><li><?php echo __d('cake_dev', 'Promoting development related to CakePHP'); ?></li></ul></li>
 </ul>
+
+<script>
+$(document).ready(function() {
+    var a = document.getElementsByTagName("a");
+    for(var i=0;i<a.length;i++) {
+        if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
+            a[i].onclick=function() {
+                window.location=this.getAttribute("href");
+                return false; 
+            }
+        }
+    }
+});
+</script>
