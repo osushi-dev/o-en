@@ -99,8 +99,8 @@ $this->Html->script('pages/dashboard', array('inline' => false));
         <h4 class="headline">おうえんメーカー<a href="/listoenmaker">もっと見る...</a></h4>
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-logolist">
-            <img src="http://lineofficial.blogimg.jp/ja/imgs/c/a/caedbf69.jpg" class="logolist-item-logo-img" />
-            <h4 class="logolist-item-logo-name">コカ・コーラ</h4>
+            <img src="http://mycareer-centerweb.jp/imgs/thumb_h/1799.gif" class="logolist-item-logo-img" />
+            <h4 class="logolist-item-logo-name">アサヒビール</h4>
             <div class="logolist-item-logo-level">
                 <i class="fa fa-heart fa-2x logo-level-level1"></i>
                 <i class="fa fa-heart fa-2x logo-level-level2"></i>
@@ -111,7 +111,7 @@ $this->Html->script('pages/dashboard', array('inline' => false));
                     <i class="fa fa-arrow-up fa-3x" ></i>
             </div>
             <div class="logolist-item-logo-rank">
-                <span class="logolist-item-logo-rank-number">31</span>位
+                <span class="logolist-item-logo-rank-number">16</span>位
             </div>
           </a>
           <a href="#" class="list-group-item list-group-item-logolist">
@@ -127,12 +127,12 @@ $this->Html->script('pages/dashboard', array('inline' => false));
                     <i class="fa fa-arrow-up fa-3x" ></i>
             </div>
             <div class="logolist-item-logo-rank">
-                <span class="logolist-item-logo-rank-number">25</span>位
+                <span class="logolist-item-logo-rank-number">18</span>位
             </div>
           </a>
           <a href="#" class="list-group-item list-group-item-logolist">
-            <img src="http://www.suntory.co.jp/img/socialthumb.gif" class="logolist-item-logo-img" />
-            <h4 class="logolist-item-logo-name">サントリー</h4>
+            <img src="http://www.kao.com/jp/web/toppage/imgs/ogp_logo.png" class="logolist-item-logo-img" />
+            <h4 class="logolist-item-logo-name">花王</h4>
             <div class="logolist-item-logo-level">
                 <i class="fa fa-heart fa-2x logo-level-level1"></i>
                 <i class="fa fa-heart fa-2x logo-level-level2"></i>
@@ -143,7 +143,7 @@ $this->Html->script('pages/dashboard', array('inline' => false));
                     <i class="fa fa-arrow-down fa-3x" ></i>
             </div>
             <div class="logolist-item-logo-rank">
-                <span class="logolist-item-logo-rank-number">63</span>位
+                <span class="logolist-item-logo-rank-number">25</span>位
             </div>
           </a>
       </div>
