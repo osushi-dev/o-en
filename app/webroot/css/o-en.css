@@ -48,6 +48,33 @@
 .table-ul li a i{
     font-size: 20px;
 }
+
+/* サンプルtableの共通設定
+----------------------------------------------------------- */
+table	{
+	border-collapse: collapse;	border-spacing: 0;
+	width: 100%;
+	margin-bottom: 30px;
+}
+th, td	{
+	padding: 10px 20px;
+	color: #1D5C79;
+}
+
+
+/* サンプル2
+----------------------------------------------------------- */
+.showPoint th	{
+	font-weight: bold;
+	border-bottom: 2px solid #1D5C79;
+}
+.showPoint td	{
+	font-weight: bold;
+	border-bottom: 1px solid #DDD;
+}
+
+
+
 #space-for-tabbar-background{
   bottom:0px;
   height:60px
