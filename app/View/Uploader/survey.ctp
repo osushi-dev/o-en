@@ -1,4 +1,6 @@
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="/js/jquery.animateNumber.js"></script>
+
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
   <div class="modal-dialog">
@@ -37,27 +39,74 @@
 
 <div class="mt-20 container-fluid main-component">
     <div class="row">
-        <h4 class="headline">レシート送信が完了しました</h4>
-        <h4 id="hide_modal" class="headline hidden">アンケートへのご協力ありがとうございました</h4>
+        <h3 class="headline">レシート送信が完了しました</h3>
+	<h3 class="headline">　取得ポイントは</h3>
+	<?php
+	    $lists = array(
+		array(
+		    'id' => 'asahi',
+		    'name' => 'アサヒビール',
+		    'point' => 2400
+		),
+		array(
+                    'id' => 'shiseido',
+                    'name' => '資生堂',
+                    'point' => 1000
+                ),
+		array(
+                    'id' => 'kaou',
+                    'name' => '花王',
+                    'point' => 800
+                )
+	    );
+	    echo "<table width='100%' class='showPoint'>";
+	    echo "<thead><tr><th>メーカー</th><th>現在ポイント</th></tr></thead>";
+	    foreach($lists as $key => $maker){
+		echo "<tr><td>" . $maker['name'] . "</td><td> <span id=" . $maker['id'] .">" . $maker['point'] . "</span></td></tr>";
+	    }
+	    echo "</table>";
+	?>
+	<h3 class="headline">　の予定です！</h3>
+        <h3 id="hide_modal" class="headline hidden"> アンケートへのご協力ありがとうございました </h3>
     </div>
 </div>
 
 
 <script>
+    $('#asahi').animateNumber(
+    	{
+      	    number: 2600
+        }, 1500
+    );
+
+    $('#shiseido').animateNumber(
+        {
+            number: 1150
+        }, 1500
+    );
+
+    $('#kaou').animateNumber(
+        {
+            number: 900
+        }, 1500
+    );
+
     jQuery(document).ready(function () {
-    	$('#myModal').modal('show');
-        $("#input-id").rating({min:0, max:5, step:1, size:'sm', showClear:false, showCaption:false});
+	setTimeout(function(){
+    	    $('#myModal').modal('show');
+            $("#input-id").rating({min:0, max:5, step:1, size:'sm', showClear:false, showCaption:false});
 
 
-        var a = document.getElementsByTagName("a");
-        for(var i=0;i<a.length;i++) {
-            if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
-                a[i].onclick=function() {
-                    window.location=this.getAttribute("href");
-                    return false; 
+            var a = document.getElementsByTagName("a");
+            for(var i=0;i<a.length;i++) {
+                if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
+                    a[i].onclick=function() {
+                        window.location=this.getAttribute("href");
+                        return false; 
+                    }
                 }
             }
-        }            
+	},2500);
     });
 
     $('#myModal').on('click', '.modal-footer .btn-primary', function() {
