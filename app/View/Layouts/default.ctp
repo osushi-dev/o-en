@@ -20,11 +20,13 @@ $this->Html->css('//fonts.googleapis.com/css?family=Gochi+Hand', null, array('in
 $this->Html->css('bootstrap.min', null, array('inline' => false));
 $this->Html->css('base',          null, array('inline' => false));
 $this->Html->css('star-rating.min', null, array('inline' => false));
+$this->Html->css('o-en', null, array('inline' => false));
 
 /*  === add js ===  */
 $this->Html->script('jquery.simple-sidebar.min.js', array('inline' => false));
 $this->Html->script('base.js', array('inline' => false));
 $this->Html->script('star-rating.min.js', array('inline' => false));
+$this->Html->script('o-en.js', array('inline' => false));
 
 ?>
 
@@ -57,43 +59,6 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-
-        <style>
-        #bottom-tabbar{
-            border-top: solid 3px rgba(231, 76, 60, 1.0);
-            padding-top: 0px;
-            position: fixed;
-            bottom: 0px;
-            z-index: 9999;
-        }
-        .table-ul {
-            background-color: gray;
-            display: table;
-            table-layout: fixed;
-            text-align: center;
-            width: 100%;
-            padding-left: 0px;
-            margin-bottom: 0px;
-        }
-        .table-ul li {
-            border-right: 1px solid #fff;
-            display: table-cell;
-            vertical-align: middle;
-        }
-        .table-ul li:last-child {
-            border-right: 0;
-        }
-        .table-ul li a {
-            display: block;
-            font-size: 8px;
-            text-decoration: none;
-            padding: 10px 0;
-            color: #fff;
-        }
-        .table-ul li a i{
-            font-size: 20px;
-        }
-        </style>
     </head>
 
     <body>
@@ -101,7 +66,7 @@ $this->Html->script('star-rating.min.js', array('inline' => false));
             <?php echo $this->Flash->render(); ?>
             <?php echo $this->fetch('content'); ?>
             <?php if(strcmp(Router::url(), "/") !== 0){?>
-                <div style="bottom:0px; height:60px"></div>
+                <div id="space-for-tabbar-background"></div>
             <?php }?>
         </div>
 
