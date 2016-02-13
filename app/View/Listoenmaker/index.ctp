@@ -10,8 +10,8 @@
     </div>
     <div class="logolist-item-logo-arrow">
             <i class="fa fa-arrow-up fa-3x" ></i>
-    </div>   
-    <div class="logolist-item-logo-rank">    
+    </div>
+    <div class="logolist-item-logo-rank">
         <span class="logolist-item-logo-rank-number">16</span>位
     </div>
   </a>
@@ -27,8 +27,8 @@
     </div>
     <div class="logolist-item-logo-arrow">
             <i class="fa fa-arrow-up fa-3x" ></i>
-    </div>   
-    <div class="logolist-item-logo-rank">    
+    </div>
+    <div class="logolist-item-logo-rank">
         <span class="logolist-item-logo-rank-number">18</span>位
     </div>
   </a>
@@ -44,8 +44,8 @@
     </div>
     <div class="logolist-item-logo-arrow">
             <i class="fa fa-arrow-down fa-3x" ></i>
-    </div>   
-    <div class="logolist-item-logo-rank">    
+    </div>
+    <div class="logolist-item-logo-rank">
         <span class="logolist-item-logo-rank-number">25</span>位
     </div>
   </a>
@@ -61,8 +61,8 @@
     </div>
     <div class="logolist-item-logo-arrow">
             <i class="fa fa-arrow-up fa-3x" ></i>
-    </div>   
-    <div class="logolist-item-logo-rank">    
+    </div>
+    <div class="logolist-item-logo-rank">
         <span class="logolist-item-logo-rank-number">46</span>位
     </div>
   </a>
@@ -79,8 +79,8 @@
     </div>
     <div class="logolist-item-logo-arrow">
             <i class="fa fa-arrow-up fa-3x" ></i>
-    </div>   
-    <div class="logolist-item-logo-rank">    
+    </div>
+    <div class="logolist-item-logo-rank">
         <span class="logolist-item-logo-rank-number">62</span>位
     </div>
   </a>
@@ -96,8 +96,8 @@
     </div>
     <div class="logolist-item-logo-arrow">
             <i class="fa fa-arrow-up fa-3x" ></i>
-    </div>   
-    <div class="logolist-item-logo-rank">    
+    </div>
+    <div class="logolist-item-logo-rank">
         <span class="logolist-item-logo-rank-number">79</span>位
     </div>
   </a>
@@ -140,7 +140,7 @@
     .logolist-item-logo-rank-number{
         font-size: 50px;
     }
-    .logolist-item-logo-arrow{        
+    .logolist-item-logo-arrow{
         position:absolute;
         top:18px;
         left:230px;
@@ -166,19 +166,4 @@
     .logo-level-empty{
         color:lightgray;
     }
-
 </style>
-
-<script>
-$(document).ready(function() {
-    var a = document.getElementsByTagName("a");
-    for(var i=0;i<a.length;i++) {
-        if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
-            a[i].onclick=function() {
-                window.location=this.getAttribute("href");
-                return false; 
-            }
-        }
-    }
-});
-</script>

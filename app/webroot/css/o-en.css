@@ -1,0 +1,38 @@
+#bottom-tabbar{
+    border-top: solid 3px rgba(231, 76, 60, 1.0);
+    padding-top: 0px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 9999;
+}
+.table-ul {
+    background-color: gray;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.table-ul li {
+    border-right: 1px solid #fff;
+    display: table-cell;
+    vertical-align: middle;
+}
+.table-ul li:last-child {
+    border-right: 0;
+}
+.table-ul li a {
+    display: block;
+    font-size: 8px;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #fff;
+}
+.table-ul li a i{
+    font-size: 20px;
+}
+#space-for-tabbar-background{
+  bottom:0px;
+  height:60px
+}

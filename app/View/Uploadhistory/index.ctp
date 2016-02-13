@@ -1,14 +1,10 @@
 <div class="ploadhistory-collectionview" >
 
     <div class="uploadhistory-collectionview-item uploadhistory-collectionview-item-position-1-1" align="center">
-        <a href="#" onclick="openmodal1_1()">
-            <img class="uploadhistory-img-thumbnail" src="http://livedoor.blogimg.jp/codran/imgs/3/a/3a6cbca0.jpg" />
-        </a>
+        <img class="uploadhistory-img-thumbnail" src="http://livedoor.blogimg.jp/codran/imgs/3/a/3a6cbca0.jpg" onclick="openmodal1_1()" />
     </div>
     <div class="uploadhistory-collectionview-item uploadhistory-collectionview-item-position-1-2" align="center">
-        <a href="#" onclick="">
-            <img class="uploadhistory-img-thumbnail" src="http://livedoor.blogimg.jp/codran/imgs/3/a/3a6cbca0.jpg" />
-        </a>
+        <img class="uploadhistory-img-thumbnail" src="http://livedoor.blogimg.jp/codran/imgs/3/a/3a6cbca0.jpg" onclick=""/>
     </div>
 
 </div>
@@ -71,10 +67,10 @@
 
 
 <style>
-    .ploadhistory-collectionview{
-      position: relative;  
+ .ploadhistory-collectionview{
+      position: relative;
   }
-  .uploadhistory-collectionview-item{
+.uploadhistory-collectionview-item{
     width:110px;
     height:110px;
     background-color: white;
@@ -109,25 +105,8 @@
 </style>
 
 <script>
-    jQuery(document).ready(function () {
-        
-
-
-        var a = document.getElementsByTagName("a");
-        for(var i=0;i<a.length;i++) {
-            if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
-                a[i].onclick=function() {
-                    window.location=this.getAttribute("href");
-                    return false; 
-                }
-            }
-        }            
-    });
-
     var openmodal1_1 = function(){
         console.log('onclick');
         $('#myModal-1-1').modal('show');
-
-    }
-
+    };
 </script>
